@@ -1,0 +1,21 @@
+<enum propertyRef="brandId"/>
+<boolean propertyRef="available" />
+<boolean propertyRef="available4preorder" />
+<string propertyRef="generalAvailabilityDate" />
+<boolean propertyRef="defaultVariantId" />
+<boolean propertyRef="isNew" />
+<boolean propertyRef="isPreOwned" />
+<string propertyRef="shortDescription" rows="2" />
+<string propertyRef="extendedDescription" rows="5" />
+<string propertyRef="phoneName" />
+<string propertyRef="manufacturerName" rows="5" />
+<string propertyRef="manufacturerRaw" rows="5" />
+<string propertyRef="phoneNameRaw" rows="5" />
+<string propertyRef="disclaimerMini" rows="5" />
+<string propertyRef="disclaimerFull" rows="5" />
+<string propertyRef="footerLegal" rows="5" />
+<enum propertyRef="colorVariant" asLabel="true" />
+<enum propertyRef="colorId" asLabel="true" />
+<enum propertyRef="gradientColor" asLabel="true" />
+<enum propertyRef="memoryVariant" asLabel="true" />
+<string propertyRef="associatedAccessoryId" />

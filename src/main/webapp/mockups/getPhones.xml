@@ -1,0 +1,48 @@
+<asset>
+<assetType>device</assetType>
+<assetId>A-849124879248</assetId>
+<assetTitle>Samsung Array</assetTitle>
+<assetPromotion>true</assetPromotion>
+<assetPromotionTitle>FREE month of service on us</assetPromotionTitle>
+<assetPromotionText>Get an account credit up to $35 (new customers only)</assetPromotionText>
+<learnMoreText>Learn more about the Free Month of Service
+This phone must activate on the $35 Data Boost plan to be eligible.</learnMoreText>
+<retailPrice>29.99</retailPrice>
+<promotionalDiscount>15.00</promotionalDiscount>
+<price>14.99</price>
+<imageOverlay>true</imageOverlay>
+<imageOverlayUrl>/jkbebkje/ost.jpg</imageOverlayUrl>
+<image>/jkbebkje/samsung_array_main.jpg</image>
+<image-variant>/jkbebkje/samsung_array_var1.jpg</image-variant>
+<image-variant>/jkbebkje/samsung_array_var2.jpg</image-variant>
+<image-variant>/jkbebkje/samsung_array_var3.jpg</image-variant>
+<image-variant>/jkbebkje/samsung_array_var4.jpg</image-variant>
+<image-variant>/jkbebkje/samsung_array_var5.jpg</image-variant>
+        <!-- Only needed for detailed view --->
+<description>Pocket a lot of power with the slim and strong Samsung Array. A large screen and full, slide-out QWERTY keyboard mean texting, email and social media are always at your fingertips. This phone is certified pre-owned.</description>
+<features>Not sure what goes in here...</features>
+</asset>
+<asset>
+<assetType>device</assetType>
+<assetId>A-849124879248</assetId>
+<assetTitle>Samsung Array</assetTitle>
+<assetPromotion>true</assetPromotion>
+<assetPromotionTitle>FREE month of service on us</assetPromotionTitle>
+<assetPromotionText>Get an account credit up to $35 (new customers only)</assetPromotionText>
+<learnMoreText>Learn more about the Free Month of Service
+    This phone must activate on the $35 Data Boost plan to be eligible.</learnMoreText>
+<retailPrice>29.99</retailPrice>
+<promotionalDiscount>15.00</promotionalDiscount>
+<price>14.99</price>
+<imageOverlay>true</imageOverlay>
+<imageOverlayUrl>/jkbebkje/ost.jpg</imageOverlayUrl>
+<image>/jkbebkje/samsung_array_main.jpg</image>
+<image-variant>/jkbebkje/samsung_array_var1.jpg</image-variant>
+<image-variant>/jkbebkje/samsung_array_var2.jpg</image-variant>
+<image-variant>/jkbebkje/samsung_array_var3.jpg</image-variant>
+<image-variant>/jkbebkje/samsung_array_var4.jpg</image-variant>
+<image-variant>/jkbebkje/samsung_array_var5.jpg</image-variant>
+<!-- Only needed for detailed view --->
+<description>Pocket a lot of power with the slim and strong Samsung Array. A large screen and full, slide-out QWERTY keyboard mean texting, email and social media are always at your fingertips. This phone is certified pre-owned.</description>
+<features>Not sure what goes in here...</features>
+</asset>
