@@ -45,7 +45,20 @@ CGLIB = 'cglib:cglib:jar:3.1'
 XOM = 'xom:xom:jar:1.2.5'
 STAX = 'stax:stax:jar:1.2.0_rc2-dev'
 CUCUMBER_REPORTING = 'net.masterthought:cucumber-reporting:jar:0.0.23'
-REST_ASSURED = 'com.jayway.restassured:rest-assured:jar:2.4.0'
+
+REST_ASSURED_T = transitive('com.jayway.restassured:rest-assured:jar:2.4.0')
+
+# Dependency hell - replaced by transitives
+# GROOVY_ALL = 'org.codehaus.groovy:groovy-all:jar:2.4.1'
+# HTTP_CLIENT = 'org.apache.httpcomponents:httpclient:jar:4.4'
+# HTTP_CORE = 'org.apache.httpcomponents:httpcore:jar:4.4'
+# HTTP_MIME = 'org.apache.httpcomponents:httpmime:jar:4.4'
+# COMMONS_LANG = 'org.apache.commons:commons-lang3:jar:3.3.2'
+# JSON_SCHEMA = 'com.jayway.restassured:json-schema-validator:jar:2.4.0'
+# HAMCREST = 'org.hamcrest:hamcrest-all:jar:1.3'
+# OBJENESIS = 'org.objenesis:objenesis:jar:2.1'
+# JSON_PATH = 'com.jayway.jsonpath:json-path:jar:1.2.0'
+
 
 Project.local_task :wildfly
 Project.local_task :deploy
@@ -58,7 +71,12 @@ define "web-mock" do
   project.group = THIS_GROUP
 
   manifest["Implementation-Vendor"] = COPYRIGHT
-  compile.with SERVLET_API, COMMONS_LOGGING, CUCUMBER_JUNIT, CUCUMBER_JAVA, CUCUMBER_DEPS, CUCUMBER_CORE, GHERKIN, XMLPULL, DOM4J, JDOM, WOODSTOX, CGLIB, XOM, STAX, JUNIT, CUCUMBER_REPORTING, REST_ASSURED
+  compile.with SERVLET_API, COMMONS_LOGGING, CUCUMBER_JUNIT, CUCUMBER_JAVA, CUCUMBER_DEPS, CUCUMBER_CORE, GHERKIN, XMLPULL,
+  DOM4J, JDOM, WOODSTOX, CGLIB, XOM, STAX, JUNIT, CUCUMBER_REPORTING, REST_ASSURED_T, _("src/lib/jsonwriter-1.0-SNAPSHOT.jar")
+
+  # , GROOVY_ALL, HTTP_CLIENT, HTTP_CORE,
+  # HTTP_MIME, COMMONS_LANG, JSON_SCHEMA, HAMCREST, OBJENESIS, JSON_PATH, _("src/lib/jsonwriter-1.0-SNAPSHOT.jar")
+
   resources
   test.compile.with # Add classpath dependencies
   #test.exclude 'cucumber.*'

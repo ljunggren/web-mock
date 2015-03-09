@@ -1,0 +1,43 @@
+Testsuite: cucumber.RunTests
+Tests run: 10, Failures: 0, Errors: 0, Time elapsed: 1.405 sec
+------------- Standard Output ---------------
+Feature: Evaluating numerous REST calls
+
+  Scenario Outline: Accessing server pages with different devices should returned properly formatted content [90m# src/test/resources/cucumber/restcalls.feature:13[0m
+    [32mGiven [0m[32ma user accessing environment '[0m[32m[1mtest[0m[32m'[0m                                                                [90m# RestCallsStepDefinitions.a_user_accessing_environment(String)[0m
+    [32mWhen [0m[32maccessing the page '[0m[32m[1mtest_get_phone.jsp[0m[32m'[0m                                                             [90m# RestCallsStepDefinitions.accessing_the_page(String)[0m
+    [32mAnd [0m[32mpassing the parameters '[0m[32m[1mformat=json&aid=A-111111[0m[32m'[0m                                                    [90m# RestCallsStepDefinitions.passing_the_parameters(String)[0m
+    [32mThen [0m[32mthe content returned should be '[0m[32m[1mjson[0m[32m'[0m                                                               [90m# RestCallsStepDefinitions.the_content_returned_should_be(String)[0m
+    [32mAnd [0m[32mthe content returned should contain '[0m[32m[1mA-111111[0m[32m'[0m                                                       [90m# RestCallsStepDefinitions.the_content_returned_should_contain(String)[0m
+
+1 Scenarios ([32m1 passed[0m)
+5 Steps ([32m5 passed[0m)
+0m1.325s
+
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+Mar 08, 2015 9:42:13 PM cucumber.RestCallsStepDefinitions a_user_accessing_environment
+INFO: Environment = test
+Mar 08, 2015 9:42:13 PM cucumber.RestCallsStepDefinitions accessing_the_page
+INFO: Page = test_get_phone.jsp
+Mar 08, 2015 9:42:13 PM cucumber.RestCallsStepDefinitions passing_the_parameters
+INFO: Parameters = format=json&aid=A-111111
+Mar 08, 2015 9:42:13 PM cucumber.RestCallsStepDefinitions the_content_returned_should_be
+INFO: Content returned is of type = json
+Mar 08, 2015 9:42:13 PM cucumber.RestCallsStepDefinitions the_content_returned_should_contain
+INFO: Content returned should contain = A-111111
+Mar 08, 2015 9:42:13 PM cucumber.RestCallsStepDefinitions the_content_returned_should_contain
+INFO: Testing path test_get_phone.jsp?format=json&aid=A-111111
+Mar 08, 2015 9:42:14 PM cucumber.RestHelper restCall
+INFO: JSON Body = { "html": [ { "body": [ , { "aid": "A-111111" }, { "_enum": { "@propertyRef": "brandId", "$": "" } }, { "_boolean": { "@propertyRef": "available", "$": "" } }, { "_boolean": { "@propertyRef": "available4preorder", "$": "" } }, { "string": { "@propertyRef": "generalAvailabilityDate", "$": "" } }, { "_boolean": { "@propertyRef": "defaultVariantId", "$": "" } }, { "_boolean": { "@propertyRef": "isNew", "$": "" } }, { "_boolean": { "@propertyRef": "isPreOwned", "$": "" } }, { "string": { "@propertyRef": "shortDescription", "@rows": "2", "$": "" } }, { "string": { "@propertyRef": "extendedDescription", "@rows": "5", "$": "" } }, { "string": { "@propertyRef": "phoneName", "$": "" } }, { "string": { "@propertyRef": "manufacturerName", "@rows": "5", "$": "" } }, { "string": { "@propertyRef": "manufacturerRaw", "@rows": "5", "$": "" } }, { "string": { "@propertyRef": "phoneNameRaw", "@rows": "5", "$": "" } }, { "string": { "@propertyRef": "disclaimerMini", "@rows": "5", "$": "" } }, { "string": { "@propertyRef": "disclaimerFull", "@rows": "5", "$": "" } }, { "string": { "@propertyRef": "footerLegal", "@rows": "5", "$": "" } }, { "_enum": { "@propertyRef": "colorVariant", "@asLabel": "true", "$": "" } }, { "_enum": { "@propertyRef": "colorId", "@asLabel": "true", "$": "" } }, { "_enum": { "@propertyRef": "gradientColor", "@asLabel": "true", "$": "" } }, { "_enum": { "@propertyRef": "memoryVariant", "@asLabel": "true", "$": "" } }, { "string": { "@propertyRef": "associatedAccessoryId", "$": "" } } ] } ] }
+
+Mar 08, 2015 9:42:14 PM cucumber.RestCallsStepDefinitions the_content_returned_should_contain
+INFO: Return status = true
+------------- ---------------- ---------------
+
+Testcase: Given a user accessing environment 'test' took 0 sec
+Testcase: When accessing the page 'test_get_phone.jsp' took 0.001 sec
+Testcase: And passing the parameters 'format=json&aid=A-111111' took 0 sec
+Testcase: Then the content returned should be 'json' took 0 sec
+Testcase: And the content returned should contain 'A-111111' took 0 sec
+Testcase: | test | test_get_phone.jsp | format=json&aid=A-111111 | json | A-111111 | took 0 sec
